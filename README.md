@@ -1,9 +1,15 @@
+<div align="center">
+
 # Justintime50's Homebrew Tap
 
 My personal Homebrew tap housing formulas for all my Homebrew projects.
 
 [![Build Status](https://travis-ci.com/Justintime50/homebrew-formulas.svg?branch=master)](https://travis-ci.com/Justintime50/homebrew-formulas)
 [![Licence](https://img.shields.io/github/license/justintime50/homebrew-formulas)](LICENSE)
+
+<img src="assets/showcase.png" alt="Showcase">
+
+</div>
 
 Homebrew is a fantastic package manager for macOS and Linux. I release some of my projects via Homebrew as it is widely used and easy to deploy to. This tap is a "self hosted" collection of Homebrew packages. For specific details about a formula contained in this tap, visit that formula's homepage.
 
