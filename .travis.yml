@@ -16,6 +16,6 @@ script:
     - brew audit burn-notice
     # - brew test burn-notice
     - brew audit easypost-cli
-    # - brew test easypost-cli
+    - brew test easypost-cli
     - brew audit fibonacci-sequence
     - brew test fibonacci-sequence

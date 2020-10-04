@@ -13,6 +13,6 @@ class EasypostCli < Formula
   end
 
   test do
-    # TODO: Write test
+    assert_match "The EasyPost CLI is misconfigured, please ensure your API key is set and accessible via this shell.", shell_output("ep create_address")
   end
 end
