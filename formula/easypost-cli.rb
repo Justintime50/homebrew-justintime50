@@ -4,8 +4,8 @@
 class EasypostCli < Formula
   desc "Use the EasyPost API on the CLI"
   homepage "https://github.com/Justintime50/easypost-cli"
-  url "https://github.com/Justintime50/easypost-cli/archive/v1.0.0.tar.gz"
-  sha256 "96648dd076f9d94a7e57b83dac31b12320ffb5f9f00e1aa5aaa0279831dd780b"
+  url "https://github.com/Justintime50/easypost-cli/archive/v1.1.0.tar.gz"
+  sha256 "c9cd32f8ea2d4222e65422df93baad0d95fc28424994a0cc2d69d31538ca60a8"
   bottle :unneeded
 
   def install
@@ -13,6 +13,6 @@ class EasypostCli < Formula
   end
 
   test do
-    assert_match "The EasyPost CLI is misconfigured, please ensure your API key is set and accessible via this shell.", shell_output("ep create_address")
+    assert_match "\"~/.easypost-cli-config\" not found, please ensure this file exists before using the easypost-cli", shell_output("ep create_address")
   end
 end
