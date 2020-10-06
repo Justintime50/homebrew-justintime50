@@ -2,10 +2,10 @@
 
 # The Homebrew formula for the burn-notice tool
 class BurnNotice < Formula
-  desc "Destroy your home directory"
+  desc "Destroy the data in your home directory"
   homepage "https://github.com/Justintime50/burn-notice"
-  url "https://github.com/Justintime50/burn-notice/archive/v1.0.0.tar.gz"
-  sha256 "59829ac7b273d31d9ec9dd00934f540b8f36f687c09325011d176fcf09444f12"
+  url "https://github.com/Justintime50/burn-notice/archive/v1.1.0.tar.gz"
+  sha256 "660f410b31eb9666ce7a9100889ef43821cfc9f0d48499f4c47eeef02735b7da"
   bottle :unneeded
 
   def install

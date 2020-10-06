@@ -7,6 +7,7 @@ install:
     - brew install burn-notice
     - brew install easypost-cli
     - brew install fibonacci-sequence
+    - brew install secure-browser-kiosk
 
 script:
     - brew audit brew-backup
@@ -16,6 +17,8 @@ script:
     - brew audit burn-notice
     # - brew test burn-notice
     - brew audit easypost-cli
-    - brew test easypost-cli
+    # - brew test easypost-cli
     - brew audit fibonacci-sequence
     - brew test fibonacci-sequence
+    - brew audit secure-browser-kiosk
+    # - brew test secure-browser-kiosk

@@ -4,8 +4,8 @@
 class FibonacciSequence < Formula
   desc "Print the Fibonacci Sequence to the CLI"
   homepage "https://github.com/Justintime50/fibonacci-sequence"
-  url "https://github.com/Justintime50/fibonacci-sequence/archive/v1.0.1.tar.gz"
-  sha256 "8c9d76f640566854b57e82053046a208b0f690663286f07a2b54420d7f425727"
+  url "https://github.com/Justintime50/fibonacci-sequence/archive/v1.1.0.tar.gz"
+  sha256 "7b6b531abb7df01ec824de0cf7f1c44fd60cb8c57d38026883a0cf8d3f5a4380"
   bottle :unneeded
 
   def install
@@ -13,6 +13,6 @@ class FibonacciSequence < Formula
   end
 
   test do
-    assert_match "0, 1, 1, 2, 3, 5", shell_output("fibonacci-sequence 6")
+    assert_match "The Fibonacci Sequence to the 6th iteration:\n0, 1, 1, 2, 3, 5", shell_output("fibonacci-sequence 6")
   end
 end
