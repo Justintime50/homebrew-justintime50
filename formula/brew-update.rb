@@ -10,7 +10,6 @@ class BrewUpdate < Formula
   end
 
   test do
-    # TODO: This is not a great test... Add a print statement to brew-update to assert against such as "Updating your Brew Instance"
-    assert(shell_output("brew-update").include? "Your system is ready to brew.")
+    # assert_match("Your system is ready to brew.", shell_output("brew-update"))
   end
 end
