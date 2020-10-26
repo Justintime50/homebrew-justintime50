@@ -1,6 +1,3 @@
-# frozen_string_literal: true
-
-# The Homebrew formula for the burn-notice tool
 class BurnNotice < Formula
   desc "Destroy the data in your home directory"
   homepage "https://github.com/Justintime50/burn-notice"
@@ -14,5 +11,7 @@ class BurnNotice < Formula
 
   test do
     # TODO: Write test
+    # This test is difficult because it requires input from the users and 
+    # would otherwise hang if not somehow killed
   end
 end

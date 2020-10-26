@@ -1,6 +1,3 @@
-# frozen_string_literal: true
-
-# The Homebrew formula for the secure-browser-kiosk tool
 class SecureBrowserKiosk < Formula
   desc "Restart Google Chrome on an interval"
   homepage "https://github.com/Justintime50/secure-browser-kiosk"
@@ -14,5 +11,7 @@ class SecureBrowserKiosk < Formula
 
   test do
     # TODO: Write test
+    # This test is difficult to write as it starts an eternal loop program
+    # that must be manually killed to exit
   end
 end

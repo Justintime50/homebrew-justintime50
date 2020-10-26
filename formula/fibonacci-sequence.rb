@@ -1,6 +1,3 @@
-# frozen_string_literal: true
-
-# The Homebrew formula for the fibonacci-sequence tool
 class FibonacciSequence < Formula
   desc "Print the Fibonacci Sequence to the CLI"
   homepage "https://github.com/Justintime50/fibonacci-sequence"
@@ -13,6 +10,6 @@ class FibonacciSequence < Formula
   end
 
   test do
-    assert_match "The Fibonacci Sequence to the 6th iteration:\n0, 1, 1, 2, 3, 5", shell_output("fibonacci-sequence 6")
+    assert_match("The Fibonacci Sequence to the 6th iteration:\n0, 1, 1, 2, 3, 5", shell_output("fibonacci-sequence 6"))
   end
 end

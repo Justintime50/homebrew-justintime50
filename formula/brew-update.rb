@@ -1,6 +1,3 @@
-# frozen_string_literal: true
-
-# The Homebrew formula for the brew-update tool
 class BrewUpdate < Formula
   desc "Automate updating your Homebrew instance"
   homepage "https://github.com/Justintime50/brew-update"
@@ -13,6 +10,7 @@ class BrewUpdate < Formula
   end
 
   test do
-    # TODO: Write test
+    # TODO: This is not a great test... Add a print statement to brew-update to assert against such as "Updating your Brew Instance"
+    assert(shell_output("brew-update").include? "Your system is ready to brew.")
   end
 end

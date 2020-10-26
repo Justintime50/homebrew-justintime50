@@ -1,6 +1,3 @@
-# frozen_string_literal: true
-
-# The Homebrew formula for the easypost-cli tool
 class EasypostCli < Formula
   desc "Use the EasyPost API on the CLI"
   homepage "https://github.com/Justintime50/easypost-cli"
@@ -13,6 +10,6 @@ class EasypostCli < Formula
   end
 
   test do
-    # assert_match "\"~/.easypost-cli-config\" not found, please ensure this file exists before using the easypost-cli", shell_output("ep create_address")
+    assert(shell_output("ep create_address").include? "please ensure this file exists before using the easypost-cli")
   end
 end
