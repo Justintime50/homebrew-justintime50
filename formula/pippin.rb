@@ -1,4 +1,7 @@
 class Pippin < Formula
+  # Pippin via Homebrew is deprecated as a legacy product. 
+  # Please use the Python implementation instead of this Shell implementation.
+  # v0.2.0 and lower is Shell, v0.3.0 and greater is Python
   desc "Get the dependency tree of a Python virtual environment"
   homepage "https://github.com/Justintime50/pippin"
   url "https://github.com/Justintime50/pippin/archive/v0.2.0.tar.gz"
