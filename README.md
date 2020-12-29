@@ -23,6 +23,14 @@ brew tap justintime50/formulas
 brew search justintime50/formulas
 ```
 
+| Project                                                                      | Install Command                     |
+| ---------------------------------------------------------------------------- | ----------------------------------- |
+| [brew-backup](https://github.com/Justintime50/brew-backup)                   | `brew install brew-backup`          |
+| [brew-update](https://github.com/Justintime50/brew-update)                   | `brew install brew-update`          |
+| [burn-notice](https://github.com/Justintime50/burn-notice)                   | `brew install burn-notice`          |
+| [easypost-cli](https://github.com/Justintime50/easypost-cli)                 | `brew install easypost-cli`         |
+| [secure-browser-kiosk](https://github.com/Justintime50/secure-browser-kiosk) | `brew install secure-browser-kiosk` |
+
 ## Development
 
 ```bash

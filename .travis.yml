@@ -6,7 +6,6 @@ install:
     - brew install brew-update
     - brew install burn-notice
     - brew install easypost-cli
-    - brew install pippin
     - brew install secure-browser-kiosk
 
 script:
@@ -18,7 +17,5 @@ script:
     # - brew test burn-notice
     - brew audit easypost-cli
     # - brew test easypost-cli
-    - brew audit pippin
-    # - brew test pippin
     - brew audit secure-browser-kiosk
     # - brew test secure-browser-kiosk
