@@ -2,19 +2,19 @@
 class Freedom < Formula
   desc "Give your computer the freedom to do more"
   homepage "https://github.com/Justintime50/freedom"
-  version "0.2.0"
+  version "0.3.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/Justintime50/freedom/releases/download/v0.2.0/freedom_0.2.0_darwin_amd64.tar.gz"
-    sha256 "1a8f7f6223d3ffbb5d9c1f92612f212a6fa24535cd85743cf016368991ffd5dc"
+    url "https://github.com/Justintime50/freedom/releases/download/v0.3.0/freedom_0.3.0_darwin_amd64.tar.gz"
+    sha256 "993f95bed3e4be9a1d734f475c0dfcdd84f1ecc9f7c8295367c57ead02148669"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Justintime50/freedom/releases/download/v0.2.0/freedom_0.2.0_linux_amd64.tar.gz"
-    sha256 "4916911ea46b85f33d1f7118594273971e18f5561edda8f56919b0f52af080b6"
+    url "https://github.com/Justintime50/freedom/releases/download/v0.3.0/freedom_0.3.0_linux_amd64.tar.gz"
+    sha256 "6d7714761b98886d33f84a7735d3eb94aab964d416ab118a7d473d3930ae6cb6"
   end
 
   def install
-    bin.install "free"
+    bin.install "freedom"
   end
 end
