@@ -29,6 +29,7 @@ brew search justintime50/formulas
 | [brew-update](https://github.com/Justintime50/brew-update)                   | `brew install brew-update`          |
 | [burn-notice](https://github.com/Justintime50/burn-notice)                   | `brew install burn-notice`          |
 | [easypost-cli](https://github.com/Justintime50/easypost-cli)                 | `brew install easypost-cli`         |
+| [freedom](https://github.com/Justintime50/freedom)                           | `brew install freedom`              |
 | [secure-browser-kiosk](https://github.com/Justintime50/secure-browser-kiosk) | `brew install secure-browser-kiosk` |
 
 ## Development
