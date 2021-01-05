@@ -10,6 +10,4 @@ class SecureBrowserKiosk < Formula
   def install
     bin.install "src/secure-browser-kiosk.sh" => "secure-browser-kiosk"
   end
-
-  
 end
