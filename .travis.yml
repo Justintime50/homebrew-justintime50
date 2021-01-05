@@ -1,12 +1,7 @@
 os: osx
+osx_image: xcode12.2
 
 install:
-    # Homebrew is dumb and no longer supports shallow clones and of course Travis hasn't fixed this on their end yet
-    - git -C "$(brew --repo homebrew/core)" fetch --unshallow
-    - git -C "$(brew --repo homebrew/cask)" fetch --unshallow
-    - brew update
-
-    # Actual installations we want
     - brew tap justintime50/formulas
     - brew install brew-backup
     - brew install brew-update
