@@ -1,6 +1,7 @@
 os: osx
 
-install: 
+install:
+    - brew update
     - brew tap justintime50/formulas
     - brew install brew-backup
     - brew install brew-update
