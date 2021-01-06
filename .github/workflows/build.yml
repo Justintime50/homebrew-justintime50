@@ -5,6 +5,8 @@ on: [push, pull_request]
 jobs:
   install:
     runs-on: macos-latest
+    strategy:
+      fail-fast: false
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
@@ -20,6 +22,8 @@ jobs:
           brew install secure-browser-kiosk
   audit:
     runs-on: macos-latest
+    strategy:
+      fail-fast: false
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
