@@ -4,6 +4,7 @@ on: [push, pull_request]
 
 jobs:
   install:
+    runs-on: macos-latest
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
@@ -18,10 +19,12 @@ jobs:
           brew install freedom
           brew install secure-browser-kiosk
   audit:
+    runs-on: macos-latest
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
       - name: Brew audit
+        run: |
           brew audit brew-backup
           brew audit brew-update
           brew audit burn-notice

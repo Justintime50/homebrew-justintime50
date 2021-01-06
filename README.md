@@ -4,7 +4,7 @@
 
 My personal Homebrew tap housing formulas for all my Homebrew projects.
 
-[![Build Status](https://travis-ci.com/Justintime50/homebrew-formulas.svg?branch=master)](https://travis-ci.com/Justintime50/homebrew-formulas)
+[![Build](https://github.com/Justintime50/homebrew-formulas/workflows/build/badge.svg)](https://github.com/Justintime50/homebrew-formulas/actions)
 [![Licence](https://img.shields.io/github/license/justintime50/homebrew-formulas)](LICENSE)
 
 <img src="assets/showcase.png" alt="Showcase">
