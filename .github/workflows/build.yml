@@ -29,18 +29,18 @@ jobs:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
       - name: Brew audit
-          run: brew audit --strict --online brew-backup
-          if: always()
-          run: brew audit --strict --online brew-update
-          if: always()
-          run: brew audit --strict --online burn-notice
-          if: always()
-          run: brew audit --strict --online easypost-cli
-          if: always()
-          run: brew audit --strict --online freedom
-          if: always()
-          run: brew audit --strict --online secure-browser-kiosk
-          if: always()
+        run: brew audit --strict --online brew-backup
+        if: always()
+        run: brew audit --strict --online brew-update
+        if: always()
+        run: brew audit --strict --online burn-notice
+        if: always()
+        run: brew audit --strict --online easypost-cli
+        if: always()
+        run: brew audit --strict --online freedom
+        if: always()
+        run: brew audit --strict --online secure-browser-kiosk
+        if: always()
   # test:
   #   steps:
   #     - name: Set up Homebrew
