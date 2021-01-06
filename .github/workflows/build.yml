@@ -1,0 +1,42 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  install:
+    steps:
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Brew tap
+        run: brew tap justintime50/formulas
+      - name: Brew install
+        run: |
+          brew install brew-backup
+          brew install brew-update
+          brew install burn-notice
+          brew install easypost-cli
+          brew install freedom
+          brew install secure-browser-kiosk
+  audit:
+    steps:
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+      - name: Brew audit
+          brew audit brew-backup
+          brew audit brew-update
+          brew audit burn-notice
+          brew audit easypost-cli
+          brew audit freedom
+          brew audit secure-browser-kiosk
+  # test:
+  #   steps:
+  #     - name: Set up Homebrew
+  #       uses: Homebrew/actions/setup-homebrew@master
+  #     - name: Brew test
+  #       run: |
+  #         brew test brew-backup
+  #         brew test brew-update
+  #         brew test burn-notice
+  #         brew test easypost-cli
+  #         brew test freedom
+  #         brew test secure-browser-kiosk
