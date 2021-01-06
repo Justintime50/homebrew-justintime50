@@ -25,6 +25,7 @@ jobs:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
       - name: Brew audit
+        run: |
           brew audit --strict --online brew-backup
           brew audit --strict --online brew-update
           brew audit --strict --online burn-notice
