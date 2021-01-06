@@ -36,7 +36,7 @@ brew search justintime50/formulas
 
 ```bash
 # Audit a formula (lint)
-brew audit <formula_name>
+brew audit --strict --online <formula_name>
 
 # Test a formula
 brew test <formula_name>

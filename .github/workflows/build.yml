@@ -5,8 +5,6 @@ on: [push, pull_request]
 jobs:
   install:
     runs-on: macos-latest
-    strategy:
-      fail-fast: false
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
@@ -20,21 +18,20 @@ jobs:
           brew install easypost-cli
           brew install freedom
           brew install secure-browser-kiosk
+        if: always() # Run all commands even if one fails
   audit:
     runs-on: macos-latest
-    strategy:
-      fail-fast: false
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
       - name: Brew audit
-        run: |
-          brew audit brew-backup
-          brew audit brew-update
-          brew audit burn-notice
-          brew audit easypost-cli
-          brew audit freedom
-          brew audit secure-browser-kiosk
+          brew audit --strict --online brew-backup
+          brew audit --strict --online brew-update
+          brew audit --strict --online burn-notice
+          brew audit --strict --online easypost-cli
+          brew audit --strict --online freedom
+          brew audit --strict --online secure-browser-kiosk
+        if: always() # Run all commands even if one fails
   # test:
   #   steps:
   #     - name: Set up Homebrew
@@ -47,3 +44,4 @@ jobs:
   #         brew test easypost-cli
   #         brew test freedom
   #         brew test secure-browser-kiosk
+  #       if: always() # Run all commands even if one fails
