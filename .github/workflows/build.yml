@@ -10,17 +10,22 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@master
       - name: Brew tap
         run: brew tap justintime50/formulas
-      - name: Brew install
+      - name: brew install brew-backup
         run: brew install brew-backup
         if: always()
+      - name: brew install brew-update
         run: brew install brew-update
         if: always()
+      - name: brew install burn-notice
         run: brew install burn-notice
         if: always()
+      - name: brew install easypost-cli
         run: brew install easypost-cli
         if: always()
+      - name: brew install freedom
         run: brew install freedom
         if: always()
+      - name: brew install secure-browser-kiosk
         run: brew install secure-browser-kiosk
         if: always()
   audit:
@@ -28,18 +33,23 @@ jobs:
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
-      - name: Brew audit
-        run: brew audit --strict --online brew-backup
+      - name: brew audit brew-backup
+        run: brew audit brew-backup
         if: always()
-        run: brew audit --strict --online brew-update
+      - name: brew audit brew-update
+        run: brew audit brew-update
         if: always()
-        run: brew audit --strict --online burn-notice
+      - name: brew audit burn-notice
+        run: brew audit burn-notice
         if: always()
-        run: brew audit --strict --online easypost-cli
+      - name: brew audit easypost-cli
+        run: brew audit easypost-cli
         if: always()
-        run: brew audit --strict --online freedom
+      - name: brew audit freedom
+        run: brew audit freedom
         if: always()
-        run: brew audit --strict --online secure-browser-kiosk
+      - name: brew audit secure-browser-kiosk
+        run: brew audit secure-browser-kiosk
         if: always()
   # test:
   #   steps:
