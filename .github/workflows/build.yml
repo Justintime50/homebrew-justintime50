@@ -11,28 +11,36 @@ jobs:
       - name: Brew tap
         run: brew tap justintime50/formulas
       - name: Brew install
-        run: |
-          brew install brew-backup
-          brew install brew-update
-          brew install burn-notice
-          brew install easypost-cli
-          brew install freedom
-          brew install secure-browser-kiosk
-        if: always() # Run all commands even if one fails
+        - run: brew install brew-backup
+          if: always()
+        - run: brew install brew-update
+          if: always()
+        - run: brew install burn-notice
+          if: always()
+        - run: brew install easypost-cli
+          if: always()
+        - run: brew install freedom
+          if: always()
+        - run: brew install secure-browser-kiosk
+          if: always()
   audit:
     runs-on: macos-latest
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
       - name: Brew audit
-        run: |
-          brew audit --strict --online brew-backup
-          brew audit --strict --online brew-update
-          brew audit --strict --online burn-notice
-          brew audit --strict --online easypost-cli
-          brew audit --strict --online freedom
-          brew audit --strict --online secure-browser-kiosk
-        if: always() # Run all commands even if one fails
+        - run: brew audit --strict --online brew-backup
+          if: always()
+        - run: brew audit --strict --online brew-update
+          if: always()
+        - run: brew audit --strict --online burn-notice
+          if: always()
+        - run: brew audit --strict --online easypost-cli
+          if: always()
+        - run: brew audit --strict --online freedom
+          if: always()
+        - run: brew audit --strict --online secure-browser-kiosk
+          if: always()
   # test:
   #   steps:
   #     - name: Set up Homebrew
@@ -45,4 +53,3 @@ jobs:
   #         brew test easypost-cli
   #         brew test freedom
   #         brew test secure-browser-kiosk
-  #       if: always() # Run all commands even if one fails
