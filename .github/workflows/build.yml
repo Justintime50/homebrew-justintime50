@@ -45,21 +45,33 @@ jobs:
       - name: brew audit easypost-cli
         run: brew audit easypost-cli
         if: always()
-      - name: brew audit freedom
-        run: brew audit freedom
-        if: always()
+      # Don't audit formula from GoReleaser since they don't conform to audit rules
+      # - name: brew audit freedom
+      #   run: brew audit freedom
+      #   if: always()
       - name: brew audit secure-browser-kiosk
         run: brew audit secure-browser-kiosk
         if: always()
   # test:
+  #   runs-on: macos-latest
   #   steps:
   #     - name: Set up Homebrew
   #       uses: Homebrew/actions/setup-homebrew@master
-  #     - name: Brew test
-  #       run: |
-  #         brew test brew-backup
-  #         brew test brew-update
-  #         brew test burn-notice
-  #         brew test easypost-cli
-  #         brew test freedom
-  #         brew test secure-browser-kiosk
+  #     - name: brew test brew-backup
+  #       run: brew test brew-backup
+  #       if: always()
+  #     - name: brew test brew-update
+  #       run: brew test brew-update
+  #       if: always()
+  #     - name: brew test burn-notice
+  #       run: brew test burn-notice
+  #       if: always()
+  #     - name: brew test easypost-cli
+  #       run: brew test easypost-cli
+  #       if: always()
+  #     - name: brew test freedom
+  #       run: brew test freedom
+  #       if: always()
+  #     - name: brew test secure-browser-kiosk
+  #       run: brew test secure-browser-kiosk
+  #       if: always()
