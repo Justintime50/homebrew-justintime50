@@ -5,8 +5,8 @@
 class EasypostCli < Formula
   desc "The EasyPost API on the CLI."
   homepage "https://github.com/Justintime50/easypost-cli"
-  url "https://github.com/Justintime50/easypost-cli/archive/v1.2.1.tar.gz"
-  sha256 "b825aa395b883c47f0a8047157a6408c92e823226bfa814bbfb5dc67ea4c0d1e"
+  url "https://github.com/Justintime50/easypost-cli/archive/v1.2.0.tar.gz"
+  sha256 "c45a58321b68e8177341f3edce1041e0d58c9d7c7efbb3f9c835f9c61cb14580"
   license "MIT"
   bottle :unneeded
 
