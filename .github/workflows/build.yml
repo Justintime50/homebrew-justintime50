@@ -45,10 +45,9 @@ jobs:
       - name: brew audit easypost-cli
         run: brew audit easypost-cli
         if: always()
-      # Don't audit formula from GoReleaser since they don't conform to audit rules
-      # - name: brew audit freedom
-      #   run: brew audit freedom
-      #   if: always()
+      - name: brew audit freedom
+        run: brew audit freedom
+        if: always()
       - name: brew audit secure-browser-kiosk
         run: brew audit secure-browser-kiosk
         if: always()
