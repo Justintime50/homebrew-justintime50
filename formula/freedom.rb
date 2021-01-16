@@ -5,20 +5,20 @@
 class Freedom < Formula
   desc "Give your computer the freedom to do more"
   homepage "https://github.com/Justintime50/freedom"
-  version "0.3.1"
+  version "0.4.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/Justintime50/freedom/releases/download/v0.3.1/freedom_0.3.1_darwin_amd64.tar.gz"
-    sha256 "b6fd6960c2eac3e2ec2c605bbb585aa725eb6511e7793172ce0452e5762af629"
+    url "https://github.com/Justintime50/freedom/releases/download/v0.4.0/freedom_0.4.0_darwin_amd64.tar.gz"
+    sha256 "aeab7af560fd51c76933828cd1f10273010670e6ab10189535fd33331693f47c"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/Justintime50/freedom/releases/download/v0.3.1/freedom_0.3.1_linux_amd64.tar.gz"
-    sha256 "c2abc837fa4269bdea636cc7745172f912dabd0fe8d527f4283e9215c7594670"
+    url "https://github.com/Justintime50/freedom/releases/download/v0.4.0/freedom_0.4.0_linux_amd64.tar.gz"
+    sha256 "8ccd684263a833754ee71bf9686c8d8e2db6f0b45f467127496dd8ac8b5e5068"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/Justintime50/freedom/releases/download/v0.3.1/freedom_0.3.1_linux_arm64.tar.gz"
-    sha256 "55816987edb83ce2f3c6b4d477f295d586bef247892ea884a15f09e8547b4933"
+    url "https://github.com/Justintime50/freedom/releases/download/v0.4.0/freedom_0.4.0_linux_arm64.tar.gz"
+    sha256 "e423ff062906e06704f432ca8dfb9ce4a76796bc2b81214c1e520f1e92cd97b6"
   end
 
   def install
