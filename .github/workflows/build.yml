@@ -10,11 +10,8 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@master
       - name: Brew tap
         run: brew tap justintime50/formulas
-      - name: brew install brew-backup
-        run: brew install brew-backup
-        if: always()
-      - name: brew install brew-update
-        run: brew install brew-update
+      - name: brew install alchemist
+        run: brew install alchemist
         if: always()
       - name: brew install burn-notice
         run: brew install burn-notice
@@ -33,11 +30,8 @@ jobs:
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
-      - name: brew audit brew-backup
-        run: brew audit brew-backup
-        if: always()
-      - name: brew audit brew-update
-        run: brew audit brew-update
+      - name: brew audit alchemist
+        run: brew audit alchemist
         if: always()
       - name: brew audit burn-notice
         run: brew audit burn-notice
@@ -56,11 +50,8 @@ jobs:
   #   steps:
   #     - name: Set up Homebrew
   #       uses: Homebrew/actions/setup-homebrew@master
-  #     - name: brew test brew-backup
-  #       run: brew test brew-backup
-  #       if: always()
-  #     - name: brew test brew-update
-  #       run: brew test brew-update
+  #     - name: brew test alchemist
+  #       run: brew test alchemist
   #       if: always()
   #     - name: brew test burn-notice
   #       run: brew test burn-notice
